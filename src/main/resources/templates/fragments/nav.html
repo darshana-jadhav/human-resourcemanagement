@@ -1,0 +1,66 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<nav class="navbar navbar-dark bg-primary" th:fragment="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Human Resource Management</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        User
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" th:href="@{/users/add}">Add User</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" th:href="@{/customers/edit}">Remove User</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" th:href="@{/users/list}">All users</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Roles
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" th:href="@{/products/add}">Intern</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" th:href="@{/products/edit}">Employee</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" th:href="@{/products/list}">Trainee</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Department
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" th:href="@{/categories/add}">Add Department</a>
+                        </li>
+                        <li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-item" th:href="@{/categories/list}">List Department</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/search/searchform}">Search</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</html>
