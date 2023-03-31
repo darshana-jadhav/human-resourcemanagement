@@ -1,0 +1,32 @@
+@media screen and (min-width:992px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+.collapsable-1{
+display:block;
+}
+
+
+
+}
+
+@media screen and (max-width:480px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+}

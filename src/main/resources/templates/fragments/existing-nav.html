@@ -1,0 +1,52 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <link href="sidebars.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark" th:fragment="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><span class="fs-5 fw-semibold">Human Resource Management</span></a>
+
+        <div class="collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        User
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" th:href="@{/users/add}">Add User</a></li>
+                        <li><a class="dropdown-item" th:href="@{/users/list}">List User</a></li>
+                    </ul>
+                </li>
+
+
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Department
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" th:href="@{/department/add}">Add Department</a></li>
+                        <li><a class="dropdown-item" th:href="@{/department/list}">List Department</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+
+
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+</nav>
+
+<script src="sidebar.js"></script>
+
+</body>
+</html>
