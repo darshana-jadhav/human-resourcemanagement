@@ -32,5 +32,12 @@ public class UserService {
 
         return userRepository.save(existingUser);
     }
+    public User viewUser(User existingUser){
+
+        return userRepository.save(existingUser);
+    }
+    public User deleteUser(long id){
+            return userRepository.deleteById(id);
+    }
 
     }
